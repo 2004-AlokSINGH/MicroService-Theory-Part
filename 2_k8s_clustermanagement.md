@@ -1,3 +1,37 @@
+# How to Manage Hundreds of Kubernetes clusters?
+Take a kubernetes distribution EKS, opentifis now then they give you issue fixedtion support.
+How to Manage Hundreds of Kubernetes Clusters?
+Key Steps for Managing Kubernetes Clusters
+Cluster Creation:
+
+Use a simple command to create a Kubernetes cluster.
+Modify the following parameters:
+Cluster Name (e.g., k8s-local).
+Node Size (e.g., t2.micro or t2.macro).
+EBS Volume Size.
+For production, use proper domain names instead of a local domain (e.g., xyz.com instead of k8s.local).
+Domain Configuration:
+
+For production clusters, purchase a custom domain (e.g., from GoDaddy).
+Configure the domain in AWS Route 53 to create a Hosted Zone:
+Replace placeholders in commands with your domain name (e.g., dev.example.com -> amazon.com).
+Cluster Initialization:
+
+Execute the configuration command to create the cluster.
+Note: Initial cluster creation doesn't start the cluster; an additional command is needed to fully configure and start the cluster.
+Tips:
+
+For local environments or development, use .k8s.local domain.
+For production, ensure your organization configures a certified domain in Route 53.
+AWS Cost Management:
+
+Avoid incurring unnecessary costs:
+Use Minikube for local experiments and learning.
+Only use AWS for production-level cluster setups or if you have free AWS credits.
+
+
+# kubernetes life cycle?
+
 # Managing Hundreds of Kubernetes Clusters
 
 Managing a large number of Kubernetes clusters can be complex and challenging. This guide provides strategies, tools, and best practices to help streamline and optimize the management of hundreds of Kubernetes clusters.
